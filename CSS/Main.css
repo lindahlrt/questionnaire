@@ -1,0 +1,179 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* VARIABLE CSS */
+:root {
+
+    /* HSL COLOR */
+    --hue-color: 240;
+
+    --title-color: hsl(var(--hue-color), 50%, 45%);
+    --title-color-light: hsl(var(--hue-color), 50%, 65%);
+    --background-color: hsl(var(--hue-color), 30%, 90%);
+    --background-color-darker: hsl(var(--hue-color), 50%, 30%)
+}
+
+/* BASE */
+* {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+  body {
+    margin: 0 5% 0 5%;
+    font-family: 'Roboto';
+    font-size: small;
+    background-color: var(--background-color);
+
+}
+
+a {
+  text-decoration: none;
+}  
+
+select {
+  font-size: 0.9rem;
+  padding: 2px 5px;
+}
+
+.section{
+    margin-top: 0.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1rem .5rem 3rem .5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 1px rgba(0,0,0,.06);
+    background-color: #fff;
+}
+
+/* BUTTON */
+
+.button{
+  display: block;
+  background-color: var(--title-color-light);
+  color:#fff;
+  padding: 0.5rem;
+  border-radius: .25rem;
+  font-size: large;
+  font-weight: 400;
+}
+
+.button:hover{
+  background-color: var(--title-color);
+}
+
+.button-next{
+  display: grid;
+  background-color: var(--title-color-light);
+  color: #fff;
+  padding: .05rem .5rem .05rem 1rem;
+  border-radius: .25rem;
+  font-size: small;
+  float: right;
+}
+
+.button-next:hover{
+  background-color: var(--title-color);
+}
+
+.button-icon{
+  color: #fff;
+  font-size: 1rem;
+  transition: .3s;
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+}
+
+.button-icon {
+  font-size: 1rem;
+  margin-right: 0.25rem;
+}
+
+/* HOME */
+
+.home-title,
+.home-subtitle{
+    text-align: center;
+}
+
+.home-title{
+    color: var(--title-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.home-subtitle{
+    display: block;
+    color: var(--title-color-light);
+    font-style: italic;
+    font-weight: 300 bold;
+    margin-bottom: 40px;
+    margin-top: -15px;
+}
+
+.home-container{
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1%;
+}
+
+.home-content{
+    position: relative;
+    padding: 1rem .5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 1px rgba(0,0,0,.06);
+}
+
+.home-question{
+    margin-left: -5px;
+    margin-right: 5px;
+    font-family: 'Roboto';
+    font-size: small;
+    text-align: left;
+}
+
+/* FORMULAIRE */
+
+.form-contact {
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 1px rgba(0,0,0,.06);
+}
+
+.form-container {
+  display: block;
+}
+
+.form-content {
+  padding: .75rem .5rem .25rem .5rem;
+  background-color: var(--title-color-light);
+  border-radius: 0.25rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.form-input {
+  width: 100%;
+  background-color: var(--title-color-light);
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .25rem .5rem;
+}
+
+.form-label {
+  color: #fff;
+}
+
